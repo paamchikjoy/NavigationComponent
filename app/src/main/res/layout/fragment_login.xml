@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:passwordToogl="http://schemas.android.com/apk/res-auto"
+    tools:context=".presenter.LoginFragment">
+
+   <LinearLayout
+       android:id="@+id/linear"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/enter_your_email"
+           >
+           <com.google.android.material.textfield.TextInputEditText
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:id="@+id/emailInput"
+               android:inputType="textEmailAddress"
+               />
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textPassword"
+           passwordToogl:errorEnabled="true"
+           android:hint="@string/enter_your_password"
+           passwordToogl:passwordToggleEnabled="true"
+           passwordToogl:passwordToggleTint="@color/purple_500"
+           >
+
+          <com.google.android.material.textfield.TextInputEditText
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/passwordInput"
+              android:inputType="textPassword"
+              />
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Login"
+           android:id="@+id/btnLogin"
+           android:layout_gravity="center"
+           android:layout_marginTop="30dp"
+           />
+
+
+
+
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Need an acconut?"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:textColor="#5609DF"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Register here"
+           android:layout_gravity="center"
+           android:padding="10dp"
+           android:textSize="15sp"
+           android:textColor="@color/design_default_color_primary"
+           android:id="@+id/registerClick"
+           />
+   </LinearLayout>
+
+
+
+</FrameLayout>
